@@ -1,7 +1,7 @@
 <?php 
 include('../four/connection.php');
-$loginID = $_GET['Login_ID'];
-$sql = "DELETE FROM login WHERE login.Login_ID = '".$loginID."'";
+$foodID = $_GET['FoodID'];
+$sql = "DELETE FROM food WHERE food.FoodID = '".$foodID."'";
 $query = mysqli_query($connect,$sql);
 
 if($query){
