@@ -41,13 +41,13 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-             
             </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="image/d.jpg">
-                <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="image/d.jpg">
+              <div class="carousel-caption d-none d-md-block">
                 <section class="page-section">
+<<<<<<< HEAD
                 <div class="container">
                 <div class="col-xl-9 mx-auto">
               <div class="cta-inner text-center rounded">
@@ -60,14 +60,30 @@
                           
                           <div class="intro-button mx-auto">
                               <a class="btn btn-primary btn-xl" href="edite.php">SEACH</a>
+=======
+                  <div class="container">
+                    <div class="col-xl-9 mx-auto">
+                      <div class="cta-inner text-center rounded">
+                        <div class="product-item">
+                          <div class="product-item-title d-flex">
+                            <div class="bg-faded p-5 d-flex mr-auto rounded">
+                              <h2 class="section-heading mb-0">
+                              <span class="section-heading-upper">Delicious Treats, Good Eats</span>
+                              <span class="section-heading-lower">Bakery &amp; Food</span>
+                                <div class="intro-button mx-auto">
+                                  <a class="btn btn-primary btn-xl" href="about.html">SEACH</a>
+                                </div>
+                              </h2>
+>>>>>>> 225a9b6b6e13a2659869c466bdffae577137dbf0
                             </div>
-                        </h2>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                </div>
-                    </div>
-                </div>
+                  </div>
               </div>
+          </div>
+              
               <div class="carousel-item">
                 <img class="d-block w-100" src="image/a.jpg" >
               </div>
@@ -81,8 +97,7 @@
               
             </div>
             
-          </div>
-      
+          
     </header>
 
     

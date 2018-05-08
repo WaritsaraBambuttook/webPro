@@ -17,7 +17,6 @@
 </html>
 <body>
     
-
 <div class="page-wrapper">
             <!-- Container fluid  -->
             <div class="container-fluid">
@@ -25,15 +24,16 @@
                 <div class="report">
                     <h1>Report</h1>
                 </div>
+
                 <div class="row">
                     <div class="col-12">
-                        
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Login</h4>
                                 <br>                               
                                 <h5 class="card-subtitle">รายชื้อผู้เข้าใช้</h5>
                                 <h6>Status : 1 == Admin , 0 == User</h6>
+
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -66,14 +66,14 @@
                                                 <td><?php echo $result['Status']; ?></td>
                                                 
                                             <td>
-                                                    <form method="post" action="EditData.html">
+                                                <form method="post" action="EditData.html" >
                                                 <button type="submit" class="btn btn-success btn-rounded m-b-10 m-l-5">
                                                     Edit
                                                 </button>
                                                 </form>
 												
-                                                <form method="post" action="delete1.html">
-                                                    <button type="submit" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                <form method="post" action="delete1.php">
+                                                    <button type="submit" name="delect" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
                                                      Delete
                                                 </button>
                                                 </form>
@@ -94,6 +94,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                
                             </div>
                         </div>
                         
