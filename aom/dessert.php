@@ -50,7 +50,13 @@
                                                 <td><?php echo $result['DessertID']; ?></td>
                                                 <td><?php echo $result['Dessert_name'];?></td>
                                                 <td><?php echo $result['PriceDessert']; ?></td>
-                                                                                                												
+                                                <td>
+												<a href="delete2.php?DessertID=<?php echo $result['DessertID']; ?>">
+                                                <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                    Delete
+                                                </button>
+                                                </a>
+                                                </td>                                             												
                                             </tr>	
 										
 									
