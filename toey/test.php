@@ -6,6 +6,9 @@ include('../four/connection.php');
 $sql="select * from food";
 $result=mysqli_query($connect,$sql);
 
+$sql1="select * from dessert";
+$result1=mysqli_query($connect,$sql1);
+
 if(isset($_POST["add_product"])){
       if(isset($_SESSION["shopping_cart"]))
       {
@@ -75,6 +78,28 @@ if(isset($_GET['action'])){
               <input type="text" name="quantity" class="form-control" value="1"/>
               <input type="hidden" name="hidden_name" value="<?php echo $row['Food_name'];?>"/>
               <input type="hidden" name="hidden_price" value="<?php echo $row['PriceFood'];?>"/>
+              <input type="submit" name="add_product" style="margin-top:5px;" class="btn btn-success" value="เพิ่มลงตะกร้า" />
+         </div>
+        </form>
+    </div>
+    <?php
+        }
+    ?>
+
+<br><br>
+    <?php
+        while($row=mysqli_fetch_array($result1)){
+    ?>
+    <div class="col-md-4">
+        <form method="post" action="test.php?action=add&id=<?php echo $row['DessertID'];?>">
+          <div style="border:1px solid #333;background-color:white;border-radius:5px;padding:1px;margin:1px">
+              <img src="<?php echo $row['img'];?>" class="img-responsive" /><br>
+              <h4 class="text-info">สินค้า : <?php echo $row['Dessert_name'];?></h4>
+              <h4 class="text-danger">ราคา: <?php echo number_format($row['PriceDessert'],2);?> บาท</h4>
+           
+              <input type="text" name="quantity" class="form-control" value="1"/>
+              <input type="hidden" name="hidden_name" value="<?php echo $row['Dessert_name'];?>"/>
+              <input type="hidden" name="hidden_price" value="<?php echo $row['PriceDessert'];?>"/>
               <input type="submit" name="add_product" style="margin-top:5px;" class="btn btn-success" value="เพิ่มลงตะกร้า" />
          </div>
         </form>
