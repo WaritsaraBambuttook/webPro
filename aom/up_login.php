@@ -1,8 +1,8 @@
 <html>
-<form method ='post' action = 'update_db.php'>
+<form method ='post' action = 'login_db.php'>
 <?php
     $connect = mysqli_connect("localhost","root","","delivery");
-    $sql = 'SELECT * FROM login where Login_ID='.$_POST['Login_ID'].'';
+    $sql = 'SELECT * FROM login where Login_ID='.$_GET['Login_ID'].'';
     $result = mysqli_query($connect, $sql);
     if (!$result) {
         echo mysqli_error();

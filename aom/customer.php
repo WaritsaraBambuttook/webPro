@@ -65,8 +65,7 @@
                                                 <td><?php echo $result['Email']; ?></td>
                                                 <td><?php echo $result['Status']; ?></td>
                                                <td>
-                                                <form name = "up_login'.$row['Login_ID'].'" method = "post" action = "up_login.php">
-                                                <input type = "hidden" name = "login_id" value = "'.$result['Login_ID'].'">
+                                               <a href="up_login.php?Login_ID=<?php echo $result['Login_ID']; ?>">
                                                     <button type="button" class="btn btn-success btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Update  !!!')">
                                                         Update
                                                     </button>
