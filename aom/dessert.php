@@ -36,6 +36,7 @@
                                                 <th width="16%">DessertrID</th>
                                                 <th width="38%">Name</th>
                                                 <th width="35%">Price</th>
+                                                <th width="15%">Function</th>
                                                 
                                             </tr>
                                         </thead>
