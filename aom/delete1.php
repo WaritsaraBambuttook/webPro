@@ -1,15 +1,15 @@
 <?php 
 include('../four/connection.php');
-$delect = $_POST['delect'];
-$sql = 'DELETE FROM login WHERE Login_ID ='.$delect;
+$loginID = $_GET['Login_ID'];
+$sql = "DELETE FROM login WHERE login.Login_ID = '".$loginID."'";
 $query = mysqli_query($connect,$sql);
 
 if($query){
-    include ('customer.php');
+	header('Location:edite.php');
 }else{
-    echo "<div style='color:red'>
-            please try again!!! cannot delect data <a href ='customer.php'>Back to report</a>
-         </div>";
+	header('Location:edite.php');
+	echo 'SQL Error';
 }
-mysqli_close($connect);
+
+
 ?>

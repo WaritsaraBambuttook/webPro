@@ -47,20 +47,6 @@
             <img class="d-block w-100" src="image/d.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <section class="page-section">
-<<<<<<< HEAD
-                <div class="container">
-                <div class="col-xl-9 mx-auto">
-              <div class="cta-inner text-center rounded">
-                  <div class="product-item">
-                    <div class="product-item-title d-flex">
-                      <div class="bg-faded p-5 d-flex mr-auto rounded">
-                        <h2 class="section-heading mb-0">
-                          <span class="section-heading-upper">Delicious Treats, Good Eats</span>
-                          <span class="section-heading-lower">Bakery &amp; Food</span>
-                          
-                          <div class="intro-button mx-auto">
-                              <a class="btn btn-primary btn-xl" href="edite.php">SEACH</a>
-=======
                   <div class="container">
                     <div class="col-xl-9 mx-auto">
                       <div class="cta-inner text-center rounded">
@@ -74,7 +60,6 @@
                                   <a class="btn btn-primary btn-xl" href="about.html">SEACH</a>
                                 </div>
                               </h2>
->>>>>>> 225a9b6b6e13a2659869c466bdffae577137dbf0
                             </div>
                           </div>
                         </div>
