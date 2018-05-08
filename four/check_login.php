@@ -22,7 +22,7 @@ else{
     if ($role === "1") {
         header("location:../aom/welcome.php");
     }else if($role === "0") {
-        header("location:menu.html");
+        header("location:../toey/test.php");
     }
 }
 
