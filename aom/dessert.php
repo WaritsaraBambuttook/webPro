@@ -58,9 +58,14 @@
                                                     </button>
                                                 </a>
 												<a href="delete2.php?DessertID=<?php echo $result['DessertID']; ?>">
-                                                <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
-                                                    Delete
-                                                </button>
+                                                    <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                        Delete
+                                                    </button>
+                                                </a>
+                                                <a href="insert1.php">
+                                                    <button type="button" class="btn btn-primary btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Insert  !!!')">
+                                                        Insert
+                                                    </button>
                                                 </a>
                                                 </td>                                             												
                                             </tr>	
