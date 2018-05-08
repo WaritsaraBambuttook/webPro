@@ -65,16 +65,22 @@
                                                 <td><?php echo $result['Email']; ?></td>
                                                 <td><?php echo $result['Status']; ?></td>
                                                 
-                                                <td>
-												
-												<a href="delete1.php?Login_ID=<?php echo $result['Login_ID']; ?>">
-                                                <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
-                                                    Delete
+                                            <td>
+                                                <form method="post" action="EditData.html" >
+                                                <button type="submit" class="btn btn-success btn-rounded m-b-10 m-l-5">
+                                                    Edit
                                                 </button>
-                                                </a>
-                                                </td>
-                                        
+                                                </form>
+												
+                                                <form method="post" action="delete1.php">
+                                                    <button type="submit" name="'.$result['Login_ID'].'" name="delect" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                     Delete
+                                                </button>
+                                                </form>
+                                                 
                                                 
+                                            </td>
+												
                                     </tr>	
 										
 									
