@@ -34,9 +34,9 @@
                                         <thead>
                                             <tr>
                                                 <th width="16%">DessertrID</th>
-                                                <th width="38%">Name</th>
-                                                <th width="35%">Price</th>
-                                                <th width="15%">Function</th>
+                                                <th width="15%">Name</th>
+                                                <th width="15%">Price</th>
+                                                <th width="40%">Function</th>
                                                 
                                             </tr>
                                         </thead>
@@ -52,6 +52,11 @@
                                                 <td><?php echo $result['Dessert_name'];?></td>
                                                 <td><?php echo $result['PriceDessert']; ?></td>
                                                 <td>
+                                                <a href="up_dessert.php?DessertID=<?php echo $result['DessertID']; ?>">
+                                                    <button type="button" class="btn btn-success btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Update  !!!')">
+                                                        Update
+                                                    </button>
+                                                </a>
 												<a href="delete2.php?DessertID=<?php echo $result['DessertID']; ?>">
                                                 <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
                                                     Delete

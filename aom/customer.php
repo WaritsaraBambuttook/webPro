@@ -65,20 +65,18 @@
                                                 <td><?php echo $result['Email']; ?></td>
                                                 <td><?php echo $result['Status']; ?></td>
                                                <td>
-                                               <a href="up_login.php?Login_ID=<?php echo $result['Login_ID']; ?>">
+                                                <a href="up_login.php?Login_ID=<?php echo $result['Login_ID']; ?>">
                                                     <button type="button" class="btn btn-success btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Update  !!!')">
                                                         Update
                                                     </button>
-                                                </form>
+                                                </a>
 												<a href="delete1.php?Login_ID=<?php echo $result['Login_ID']; ?>">
                                                 <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
                                                     Delete
                                                 </button>
                                                 </a>
                                                 </td>
-                                                <td>
-                                                <a href=""></a>
-                                                </td>
+                                                
 												
                                     </tr>	
 										
