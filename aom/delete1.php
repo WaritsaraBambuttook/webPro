@@ -1,6 +1,8 @@
 <?php 
-include('connect_db.php');
-$cusID = $_GET['CustomerID'];
-$sql = "DELETE FROM `project` WHERE `customer`.`CustomerID` = $cusID";
+include('../four/connection.php');
+$cusID = $_GET['Login_ID'];
+$sql = 'DELETE FROM login WHERE Login_ID ='.$cusID;
 $query = mysqli_query($connect,$sql);
+
+include ('customer.php');
 ?>

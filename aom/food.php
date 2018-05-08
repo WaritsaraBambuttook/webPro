@@ -42,7 +42,7 @@
 										<tbody>
 									<?php
 										
-									include ('connect_db.php');
+									include ('../four/connection.php');
 								   $sql = "SELECT * FROM food ORDER BY FoodID ";
 								   $query = mysqli_query($connect,$sql);
 									while($result = mysqli_fetch_array($query)) {  ?>										
@@ -50,11 +50,7 @@
                                                 <td><?php echo $result['FoodID']; ?></td>
                                                 <td><?php echo $result['Foodname'];?></td>
                                                 <td><?php echo $result['PriceFood']; ?></td>
-                                                
-                                                
-													
-												
-												
+                                      											
                                             </tr>	
 										
 									

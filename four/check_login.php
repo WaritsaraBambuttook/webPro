@@ -20,7 +20,7 @@ if (empty($rs)){ //ถ้ามันเป็ยค่าว่าง
 else{
     $role = $rs["Status"];
     if ($role === "1") {
-        header("location:report.html");
+        header("location:../aom/welcome.php");
     }else if($role === "0") {
         header("location:menu.html");
     }
