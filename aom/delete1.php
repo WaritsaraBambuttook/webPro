@@ -10,6 +10,4 @@ if($query){
 	header('Location:edite.php');
 	echo 'SQL Error';
 }
-
-
 ?>
