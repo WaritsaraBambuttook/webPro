@@ -48,7 +48,7 @@
 									while($result = mysqli_fetch_array($query)) {  ?>										
 									        <tr>
                                                 <td><?php echo $result['FoodID']; ?></td>
-                                                <td><?php echo $result['Foodname'];?></td>
+                                                <td><?php echo $result['Food_name'];?></td>
                                                 <td><?php echo $result['PriceFood']; ?></td>
                                       											
                                             </tr>	
