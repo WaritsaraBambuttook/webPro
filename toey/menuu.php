@@ -57,7 +57,7 @@ $('input[name='+fieldName+']').val(0);
   </head>
 
  
- 
+
 
   <body>
   
@@ -155,6 +155,7 @@ $('input[name='+fieldName+']').val(0);
 
     </header>
 
+
     <!-- Portfolio Grid of Foods -->
   <section class="bg-light" id="portfolio">
     <div class="container">
@@ -179,7 +180,9 @@ $('input[name='+fieldName+']').val(0);
             <h4>Healthy Salad</h4>
             <p class="text-muted">Fruit and vegetable salad with black pepper chicken.</p>
             <h5>79 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
+           <!-- <a id="go" >Add</a> 
+        
+            <button class="buttom"  type="submit" herf="insertfood.php" >Add</button>-->
           </div>
         </div>
 
@@ -197,7 +200,7 @@ $('input[name='+fieldName+']').val(0);
             <h4>Fried rice</h4>
             <p class="text-muted">Fried rice with shrimp, Bacon Put the carrots, peas ,and stir with special sauce.</p>
             <h5>89 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
+
           </div>
         </div>
 
@@ -215,7 +218,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>soup</h4>
             <p class="text-muted">Spicy mixed vegetable soup</p>
             <h5>79 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -233,7 +235,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Japanese Curry Rice</h4>
             <p class="text-muted">Fried rice with special sauce, fried pork, fried chicken skin with fresh egg yolk and side dishes.</p>
             <h5>99 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -251,7 +252,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Mixed salad</h4>
             <p class="text-muted">Total Organic vegetables 6 type with white sesame dressing.</p>
             <h5>79 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -268,8 +268,7 @@ $('input[name='+fieldName+']').val(0);
           <div class="portfolio-caption">
             <h4>Rice topped with stir-fried pork and basil.</h4>
             <p class="text-muted">Fried pork and basil with a special sauce and fried egg.</p>
-            <h5>69 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
+            <h5>69 bath.</h5>        
           </div>
         </div>
       </div>
@@ -302,7 +301,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Smoothie Mixed Berry</h4>
             <p class="text-muted">SmoothieBlue Berry Smoothie and whipped cream for decoration </p>
             <h5>69 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -320,7 +318,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Pancake </h4>
             <p class="text-muted">Pancake with honey sauce and berries 4 types.</p>
             <h5>79 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -338,7 +335,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Crepes cake</h4>
             <p class="text-muted">Matcha mille crepes green tea cake</p>
             <h5>79 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -356,7 +352,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Brownie Cake</h4>
             <p class="text-muted">Sprinkle chocolate powder. Put the granules, chocolate chip</p>
             <h5>49 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -374,7 +369,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Strawberry cheesecake</h4>
             <p class="text-muted">Total Organic vegetables 6 type with white sesame dressing.</p>
             <h5>69 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
 
@@ -392,7 +386,6 @@ $('input[name='+fieldName+']').val(0);
             <h4>Donut Cake</h4>
             <p class="text-muted">The dough is made from powder, chocolate and white sauce-coated insert oreo.</p>
             <h5>59 bath.</h5>
-            <a id="go" herf="#" class="buttom">Add</a>
           </div>
         </div>
       </div>
