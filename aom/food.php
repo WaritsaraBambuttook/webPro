@@ -48,9 +48,15 @@
 									while($result = mysqli_fetch_array($query)) {  ?>										
 									        <tr>
                                                 <td><?php echo $result['FoodID']; ?></td>
-                                                <td><?php echo $result['Foodname'];?></td>
+                                                <td><?php echo $result['Food_name'];?></td>
                                                 <td><?php echo $result['PriceFood']; ?></td>
-                                      											
+                                                <td>
+												<a href="delete3.php?FoodID=<?php echo $result['FoodID']; ?>">
+                                                <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                    Delete
+                                                </button>
+                                                </a>
+                                                </td>  									
                                             </tr>	
 										
 									
