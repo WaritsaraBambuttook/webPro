@@ -27,6 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="edite.php">Edite</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="order.php">Order Report</a>
+                </li>
             </ul>
         </div> 
     </div>
