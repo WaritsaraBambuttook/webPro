@@ -16,70 +16,59 @@
 </body>
 </html>
 <body>
-    
-
-<div class="page-wrapper">
-            <!-- Container fluid  -->
-            <div class="container-fluid">
-                <!-- Start Page Content -->
-                <div class="row">
-                    <div class="col-12">
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Food</h4>
-                                <h6 class="card-subtitle">อาหาร</h6>
-                                <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th width="16%">FoodID</th>
-                                                <th width="15%">Name</th>
-                                                <th width="15%">Price</th>
-                                                <th width="40%">Function</th>
-                                                
-                                            </tr>
-                                        </thead>
-										<tbody>
-									<?php
-										
-									include ('../four/connection.php');
-								   $sql = "SELECT * FROM food ORDER BY FoodID ";
-								   $query = mysqli_query($connect,$sql);
-									while($result = mysqli_fetch_array($query)) {  ?>										
-									        <tr>
+    <div class="page-wrapper">
+        <!-- Container fluid  -->
+        <div class="container-fluid">
+            <!-- Start Page Content -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Food</h4>
+                            <h6 class="card-subtitle">อาหาร</h6>
+                            <div class="table-responsive m-t-40">
+                                <table id="myTable" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th width="16%">FoodID</th>
+                                        <th width="15%">Name</th>
+                                        <th width="15%">Price</th>
+                                        <th width="40%">Function</th>
+                                        </tr>
+                                    </thead>
+									<tbody>
+									    <?php
+									        include ('../four/connection.php');
+                                            $sql = "SELECT * FROM food ORDER BY FoodID ";
+                                            $query = mysqli_query($connect,$sql);
+                                            while($result = mysqli_fetch_array($query)) {  ?>										
+                                                <tr>
                                                 <td><?php echo $result['FoodID']; ?></td>
                                                 <td><?php echo $result['Food_name'];?></td>
                                                 <td><?php echo $result['PriceFood']; ?></td>
                                                 <td>
-                                                <a href="up_food.php?FoodID=<?php echo $result['FoodID']; ?>">
+                                                    <a href="up_food.php?FoodID=<?php echo $result['FoodID']; ?>">
                                                     <button type="button" class="btn btn-success btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Update  !!!')">
                                                         Update
                                                     </button>
-												<a href="delete3.php?FoodID=<?php echo $result['FoodID']; ?>">
-                                                <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
-                                                    Delete
-                                                </button>
-                                                </a>
+                                                    <a href="delete3.php?FoodID=<?php echo $result['FoodID']; ?>">
+                                                    <button type="button" class="btn btn-danger btn-rounded m-b-10 m-l-5" onclick="return confirm('Confirm Delete  !!!')">
+                                                        Delete
+                                                    </button>
+                                                    </a>
                                                 </td>  									
-                                            </tr>	
-										
-									
-									<?php
-										
-									}
-	
-										
-									?>	
-										  
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                </tr>	
+										    <?php
+                                                }
+                                            ?>	
+									</tbody>
+                                </table>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
-                <!-- End PAge Content -->
-            </div></body>
+            </div>
+        <!-- End PAge Content -->
+    </div>
+</body>
 </html>
