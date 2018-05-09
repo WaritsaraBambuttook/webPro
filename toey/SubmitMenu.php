@@ -2,7 +2,7 @@
 
 include('../four/connection.php');
 
-$sql = 'INSERT INTO report (ReportID,Product_name,Price,Count,Total,Login_id) VALUES("","'.$_POST["item_name"].'","'.$_POST["item_price"].'","'.$_POST["item_quantity"].'","'.$_POST["item_price"]*$_POST["item_quantity"].'","'.$_POST["Login_ID"].'")';
+$sql = 'INSERT INTO report (ReportID,Product_name,Price,Count,Total,Login_id) VALUES("","'.$value['item_name'].'","'.$_POST["item_price"].'","'.$_POST["item_quantity"].'","'.$_POST["item_price"]*$_POST["item_quantity"].'","'.$_POST["Login_ID"].'")';
 $result = mysqli_query($connect, $sql);
 
 
