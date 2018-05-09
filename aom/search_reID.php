@@ -47,7 +47,7 @@
 
         <div class="col-lg-12 text-center">
         <form name = "user"action="result2.php" method = "post">
-        <h5>Please select User ID : <select name = 'report'> </h5>
+        <h5>Please select Report ID : <select name = 'report'> </h5>
         <?php
             include ('../four/connection.php');
             $sql = 'SELECT* FROM report';
@@ -72,11 +72,14 @@
         ?>
         <br><br>
         <input type="submit" value="Detail">
-
+        
+            <a href="welcome.php"><input type="button" value="Back"></a>
+        
         </form>   
         </div>
 
         </div>
     </div>
+    
 </body>
 </html>

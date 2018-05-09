@@ -72,6 +72,7 @@
         ?>
         <br><br>
         <input type="submit" value="Detail">
+        <a href="welcome.php"><input type="button" value="Back"></a>
         </form>
         </div>
 

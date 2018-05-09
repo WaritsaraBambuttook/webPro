@@ -92,6 +92,7 @@
 	                                ?>	
 								</tbody>
                             </table>
+                            <center><a href="search_user.php"><input type="button" value="Back"></a></center>
                         </div>
                     </div>
                 </div>

@@ -90,6 +90,7 @@
 	                                ?>	
 								</tbody>
                             </table>
+                            <center><a href="search_reID.php"><input type="button" value="Back"></a></center>
                         </div>
                     </div>
                 </div>
