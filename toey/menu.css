@@ -1,7 +1,6 @@
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('image/white.jpg');
 }
  
 
@@ -87,7 +86,7 @@ section h3.section-subheading {
   
   
   #mainNav {
-    background-color: #fab5b5;
+    
   }
   
   #mainNav .navbar-toggler {
@@ -220,6 +219,7 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     margin: 0;
+  
    
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   }
@@ -238,6 +238,7 @@ section h3.section-subheading {
     color: rgb(11, 4, 80);
     text-decoration: none;
     transition: 0.5s;
+    
 }
     .buttom:hover {
         background: rgb(137, 129, 245);
