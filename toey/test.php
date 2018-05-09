@@ -24,7 +24,7 @@ if(isset($_POST["add_product"])){
                   $_SESSION["shopping_cart"][$count] = $item_array;
            }else{
                 echo '<script>alert("สินค้าถูกเพิ่มแล้ว")</script>';
-                echo '<script>window.location="index.php"</script>';
+                echo '<script>window.location="tet.php"</script>';
            }
       }
       else{
