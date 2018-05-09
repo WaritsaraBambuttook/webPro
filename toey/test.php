@@ -214,9 +214,9 @@ if(isset($_GET['action'])){
         <?php
           if(!empty($_SESSION["shopping_cart"])){
               $total=0;
-              foreach ($_SESSION['shopping_cart'] as $key => $value) { ?>
+                foreach ($_SESSION['shopping_cart'] as $key => $value) { ?>
               <tr>
-                <td><?php echo $value['item_name'];?></td>
+                <td><?php echo $value['item_name'];?> </td>
                 <td><?php echo $value['item_quantity'];?></td>
                 <td><?php echo number_format($value['item_price'],2);?></td>
                 <td><?php echo number_format($value['item_price']*$value['item_quantity'],2);?></td>
