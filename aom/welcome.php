@@ -90,18 +90,18 @@
 
     <div class="container">
       <div class="row">
-      <h2>Search By</h2>
-      <br><br>
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="margin-top:50px;">Search By</h2>
+          <br><br>
+        </div>
+
+        <div class="col-lg-12  text-center">
+          <button type="button" class="btn btn-primary btn-lg">
+          <a href="search_user.php"></a>User ID</button>
       
-      <button type="button" class="btn btn-primary btn-lg">
-        <a href="search_user.php">
-          User ID
-        </a>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg">
-          <a href="search_reID.php"></a>
-          Report ID
-        </button>
+          <button type="button" class="btn btn-primary btn-lg">
+          <a href="search_reID.php"></a>Report ID</button>
+        </div>
 
       </div>
     </div>
