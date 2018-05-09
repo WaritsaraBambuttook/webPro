@@ -88,6 +88,24 @@
           
     </header>
 
+    <div class="container">
+      <div class="row">
+      <h2>Search By</h2>
+      <br><br>
+      
+      <button type="button" class="btn btn-primary btn-lg">
+        <a href="search_user.php">
+          User ID
+        </a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg">
+          <a href="search_reID.php"></a>
+          Report ID
+        </button>
+
+      </div>
+    </div>
+
     
 </body>
 </html>
