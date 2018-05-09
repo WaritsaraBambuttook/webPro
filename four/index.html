@@ -15,7 +15,7 @@
   <div style="text-align: center">
     <h1>Sign In</h1>
   </div>
-    <form action="check_login.php" method="post">
+    <form action="check_login.php?Login_ID=<?php echo $row['Login_ID']; ?>" method="post">
         <div class="form-group">
             <label for="Username"></label>
             <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" placeholder="Username" required>
