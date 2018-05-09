@@ -57,7 +57,7 @@
                               <span class="section-heading-upper">Delicious Treats, Good Eats</span>
                               <span class="section-heading-lower">Bakery &amp; Food</span>
                                 <div class="intro-button mx-auto">
-                                  <a class="btn btn-primary btn-xl" href="edite.php">SEACH</a>
+                                  <a class="btn btn-primary btn-xl" href="edite.php">EDITE</a>
                                 </div>
                               </h2>
                             </div>
