@@ -139,55 +139,6 @@ if(isset($_GET['action'])){
   </section>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color : black; opacity:0.8;" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Foods Deilvery</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-       
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Food</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--about-->
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <img src="image/main.jpg" class="rounded-circle" alt="Cinque Terre">
-          <br>
-          <br>
-        </div>
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Foods Derilvery</h2>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-md-12">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Street Foods</h4>
-          <p class="text-muted">“If they stare, let them stare. You can’t blend in when you were born to stand out.” </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
 <!--
     <br>
     <div class="container" style="width:700px">
