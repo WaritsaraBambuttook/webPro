@@ -38,32 +38,45 @@
     </div>
 </nav>
 
-<form name = "user"action="result2.php" method = "post">
-    Please select User ID : <select name = 'report'>
-    <?php
-         include ('../four/connection.php');
-         $sql = 'SELECT* FROM report';
-         $result = mysqli_query($connect,$sql);
-         if(!$result){
-             echo mysqli_error().'<br>';
-             die ('Can not access database!');
-         }else{
-             while($row = mysqli_fetch_assoc($result)){
-                 echo '<option value=';
-                 while(list($key,$value)=each($row)){
-                     echo $value;
-                     echo '>';
-                     echo $value;
-                     echo '</option>';
-                 }
-             }
-             echo '<option value = "all">all</option>';
-             echo '</select>';
-             mysqli_close($connect);
-         }
-    ?>
-    <br><input type="submit" value="Dtail">
-</form>
-    
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="margin-top:50px;">Search</h2>
+          <br><br>
+        </div>
+
+        <div class="col-lg-12 text-center">
+        <form name = "user"action="result2.php" method = "post">
+        <h5>Please select User ID : <select name = 'report'> </h5>
+        <?php
+            include ('../four/connection.php');
+            $sql = 'SELECT* FROM report';
+            $result = mysqli_query($connect,$sql);
+            if(!$result){
+                echo mysqli_error().'<br>';
+                die ('Can not access database!');
+            }else{
+                while($row = mysqli_fetch_assoc($result)){
+                    echo '<option value=';
+                    while(list($key,$value)=each($row)){
+                        echo $value;
+                        echo '>';
+                        echo $value;
+                        echo '</option>';
+                    }
+                }
+                echo '<option value = "all">all</option>';
+                echo '</select>';
+                mysqli_close($connect);
+            }
+        ?>
+        <br><br>
+        <input type="submit" value="Detail">
+
+        </form>   
+        </div>
+
+        </div>
+    </div>
 </body>
 </html>
