@@ -147,8 +147,9 @@ if(isset($_GET['action'])){
 <!-- Portfolio Grid of Foods -->
 <br>
 
-
-    <div class="container">
+    <hr>
+    <br>
+    <div class="container" id="portfolio">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Foods/Dessert</h2>
@@ -163,17 +164,17 @@ if(isset($_GET['action'])){
                 while($row=mysqli_fetch_array($result)){
         ?> 
  
-    <div class="col-md-4 ">
+    <div class="col-md-4 text-center">
         <form method="post" action="test.php?action=add&id=<?php echo $row['FoodID'];?>">
           <div style="border:1px solid #333;background-color:white;border-radius:0px;padding:1px;margin:20px">
               <img src="<?php echo $row['img'];?>" class="img-responsive" /><br>
-              <h4 class="text-info">สินค้า : <?php echo $row['Food_name'];?></h4>
-              <h4 class="text-danger">ราคา: <?php echo number_format($row['PriceFood'],2);?> บาท</h4>
+              <h4 class="text-info">Dessert : <?php echo $row['Food_name'];?></h4>
+              <h4 class="text-danger">Price: <?php echo number_format($row['PriceFood'],2);?> Baht.</h4>
            
               <input type="text" name="quantity" class="form-control" value="1"/>
               <input type="hidden" name="hidden_name" value="<?php echo $row['Food_name'];?>"/>
               <input type="hidden" name="hidden_price" value="<?php echo $row['PriceFood'];?>"/>
-              <input type="submit" name="add_product" style="margin-top:5px;" class="btn btn-success" value="เพิ่มลงตะกร้า" />
+              <input type="submit" name="add_product" style="margin-top:20px; margin-bottom:20px;" class="btn btn-success" value="ADD"/>
          </div>
         </form>
     </div>
@@ -189,7 +190,7 @@ if(isset($_GET['action'])){
     <?php
         while($row=mysqli_fetch_array($result1)){
     ?>
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
         <form method="post" action="test.php?action=add&id=<?php echo $row['DessertID'];?>">
           <div style="border:1px solid #333;background-color:white;border-radius:5px;padding:1px;margin:20px">
               <img src="<?php echo $row['img'];?>" class="img-responsive" /><br>
@@ -199,7 +200,7 @@ if(isset($_GET['action'])){
               <input type="text" name="quantity" class="form-control" value="1"/>
               <input type="hidden" name="hidden_name" value="<?php echo $row['Dessert_name'];?>"/>
               <input type="hidden" name="hidden_price" value="<?php echo $row['PriceDessert'];?>"/>
-              <input type="submit" name="add_product" style="margin-top:5px;" class="btn btn-success" value="ADD" />
+              <input type="submit" name="add_product" style="margin-top:20px; margin-bottom:20px;" class="btn btn-success" value="ADD"/>
          </div>
         </form>
     </div>
@@ -213,11 +214,11 @@ if(isset($_GET['action'])){
       <div class="table-responsive">
       <table class="table table-bordered">
         <tr>
-          <th>Product</th>
-          <th>Quanilty</th>
-          <th>Price</th>
-          <th>Total</th>
-          <th>Process</th>
+          <th><center>Product</center></th>
+          <th><center>Quanilty</center></th>
+          <th><center>Price</center></th>
+          <th><center>Total</center></th>
+          <th><center>Process</center></th>
         </tr>
 
         <?php
@@ -229,7 +230,7 @@ if(isset($_GET['action'])){
                 <td><?php echo $value['item_quantity'];?></td>
                 <td><?php echo number_format($value['item_price'],2);?></td>
                 <td><?php echo number_format($value['item_price']*$value['item_quantity'],2);?></td>
-                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>">Dlete</td>
+                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>" styple="border:2px; color: #333" >Dlete</td>
               </tr>
           <?php
               $total=$total+($value['item_price']*$value['item_quantity']);
@@ -248,7 +249,7 @@ if(isset($_GET['action'])){
     </div>
 
    <form action="SubmitMenu.php" method="post">
-          <button type="submit" class="submitmenu">ยืนยันการสั้งซื้อ</button>
+          <button type="submit" class="submitmenu">Confirm menu</button>
    </form> 
     </div>
   </body>
