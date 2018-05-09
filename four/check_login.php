@@ -19,9 +19,10 @@ if (empty($rs)){ //ถ้ามันเป็ยค่าว่าง
 }
 else{
     $role = $rs["Status"];
+    $userId = $rs["Login_ID"];
+    $_SESSION['Login_ID'] = $userId;
     if ($role === "1") {
         header("location:../aom/welcome.php");
-        $login = $_SESSION['Login_ID'];
     }else if($role === "0") {
         header("location:../toey/test.php");
     }

@@ -198,6 +198,8 @@ if(isset($_GET['action'])){
         }
     ?>
 
+<form action="SubmitMenu.php" method="post">
+
     <br>
     <div style="clear:both;"></div>
     <br>
@@ -239,8 +241,9 @@ if(isset($_GET['action'])){
     </div>
 
     <div class="contrainer text-center">
-    <form action="SubmitMenu.php" method="post">
+    
           <button type="submit" class="submitmenu"  >Confirm menu</button>
+           
     </form>
     </div>
     <br>
