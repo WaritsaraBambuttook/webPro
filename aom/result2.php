@@ -48,31 +48,29 @@
                     <div class="card-body">
                         
                         <br>                               
-                        <h5 class="card-subtitle">ข้อมูลสมาชิก</h5>
+                        <h5 class="card-subtitle">ข้อมูลการสั่งซื้อ</h5>
                         
                         <div class="table-responsive m-t-40" >
                             <table id="myTable" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th width="5%">ID</th>
-                                        <th width="5%">First Name</th>
-                                        <th width="10%">Last Name</th>
-                                        <th width="7%">Telephone</th>
-                                        <th width="7%">Email</th>
-                                        <th width="5%">Address</th>
-                                        <th width="5%">Username</th>
-                                        <th width="5%">Password</th>
-                                        <th width="5%">Status</th>
+                                        <th width="5%">Product Name</th>
+                                        <th width="10%">Price</th>
+                                        <th width="7%">Count</th>
+                                        <th width="7%">Total</th>
+                                        <th width="5%">Login ID</th>
+                                        
                                        
                                     </tr>
                                 </thead>
 							    <tbody>
 								    <?php
                                          include ('../four/connection.php');
-									    if($_POST['user']=="all"){
-                                            $sql = 'SELECT * FROM login';
+									    if($_POST['report']=="all"){
+                                            $sql = 'SELECT * FROM report';
                                         }else{
-                                            $sql = 'SELECT* FROM login WHERE Login_ID = '.$_POST['user'];
+                                            $sql = 'SELECT* FROM report WHERE ReportID = '.$_POST['report'];
                                         }
                                         $result = mysqli_query($connect,$sql);
                                         

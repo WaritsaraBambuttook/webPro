@@ -96,11 +96,11 @@
         </div>
 
         <div class="col-lg-12  text-center">
-          <button type="button" class="btn btn-primary btn-lg">
-          <a href="search_user.php"></a>User ID</button>
+          <button type="button" class="btn btn-primary btn-lg ">
+          <a href="search_user.php" style="color:#FFF" >User ID</a></button>
       
           <button type="button" class="btn btn-primary btn-lg">
-          <a href="search_reID.php"></a>Report ID</button>
+          <a href="search_reID.php" style="color:#FFF" >Report ID</a></button>
         </div>
 
       </div>
