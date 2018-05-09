@@ -11,10 +11,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-logo ">
+            <a class="navbar-brand" href="welcome.php">Delivery</a>       
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>        
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="welcome.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="edite.php">Edite</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+</nav>
+
     <?php
         include ('customer.php');
         include ('dessert.php');
         include ('food.php');
     ?>
+    
 </body>
 </html>
