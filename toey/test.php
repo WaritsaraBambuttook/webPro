@@ -55,15 +55,91 @@ if(isset($_GET['action'])){
   <head>
     <meta charset="utf-8">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     
+
   </head>
-  <body>
+
+  <body id="page-top" >
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color : black; opacity:0.8;" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Foods Derilveru</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Food</a>
+            </li>
+
+            <!--
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>  -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--about-->
+  <section id="services">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img src="image/main.jpg" class="rounded-circle" alt="Cinque Terre">
+          <br>
+          <br>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Foods Derilvery</h2>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Street Foods</h4>
+          <p class="text-muted">“If they stare, let them stare. You can’t blend in when you were born to stand out.” </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
     <br>
-<div class="container" style="width:700px">
+    <div class="container" style="width:700px">
         <h3 align="center">ระบบตะกร้าสินค้า</h3><br>
     <?php
         while($row=mysqli_fetch_array($result)){
@@ -82,11 +158,13 @@ if(isset($_GET['action'])){
          </div>
         </form>
     </div>
+
+    <!---->
     <?php
         }
     ?>
+    <!---->
 
-<br><br>
     <?php
         while($row=mysqli_fetch_array($result1)){
     ?>
@@ -147,6 +225,10 @@ if(isset($_GET['action'])){
       </table>
       <!-- <?php echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; ?> -->
     </div>
+
+   <form action="SubmitMenu.php" method="post">
+          <button type="submit" class="submitmenu">ยืนยันการสั้งซื้อ</button>
+   </form> 
     </div>
   </body>
 </html>
