@@ -202,7 +202,7 @@ if(isset($_GET['action'])){
                 <td><?php echo $value['item_quantity'];?></td>
                 <td><?php echo number_format($value['item_price'],2);?></td>
                 <td><?php echo number_format($value['item_price']*$value['item_quantity'],2);?></td>
-                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>"  >Dlete</td>
+                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>"  >Delete</td>
               </tr>
           <?php
               $total=$total+($value['item_price']*$value['item_quantity']);

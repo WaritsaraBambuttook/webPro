@@ -21,6 +21,7 @@ else{
     $role = $rs["Status"];
     $userId = $rs["Login_ID"];
     $_SESSION['Login_ID'] = $userId;
+    
     if ($role === "1") {
         header("location:../aom/welcome.php");
     }else if($role === "0") {
