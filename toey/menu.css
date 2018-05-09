@@ -237,6 +237,7 @@ section h3.section-subheading {
     color: rgb(11, 4, 80);
     text-decoration: none;
     transition: 0.5s;
+    
 }
     .buttom:hover {
         background: rgb(137, 129, 245);

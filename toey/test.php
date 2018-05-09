@@ -230,7 +230,7 @@ if(isset($_GET['action'])){
                 <td><?php echo $value['item_quantity'];?></td>
                 <td><?php echo number_format($value['item_price'],2);?></td>
                 <td><?php echo number_format($value['item_price']*$value['item_quantity'],2);?></td>
-                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>" styple="border:2px; color: #333" >Dlete</td>
+                <td><a href="test.php?action=delete&id=<?php echo $value['item_id'];?>"  >Dlete</td>
               </tr>
           <?php
               $total=$total+($value['item_price']*$value['item_quantity']);
@@ -248,9 +248,15 @@ if(isset($_GET['action'])){
       <!-- <?php echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; ?> -->
     </div>
 
-   <form action="SubmitMenu.php" method="post">
-          <button type="submit" class="submitmenu">Confirm menu</button>
-   </form> 
+    <div class="contrainer text-center">
+    <form action="SubmitMenu.php" method="post">
+          <button type="submit" class="submitmenu"  >Confirm menu</button>
+    </form>
+    </div>
+    <br>
+    
+
+
     </div>
   </body>
 </html>
