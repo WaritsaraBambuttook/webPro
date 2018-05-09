@@ -78,22 +78,35 @@
                                             die ('Can not access database!')
                                     }else{
                                         while( $row = mysqli_fetch_array($result)) {  
-                                    ?>										
-									    <tr>
-                                            <td><?php echo $result['Login_ID']; ?></td>
-                                            <td><?php echo $result['Firstname'];?></td>
-                                            <td><?php echo $result['Lastname']; ?></td>
-                                            <td><?php echo $result['Telephone']; ?></td>
-                                            <td><?php echo $result['Address']; ?></td>
-                                            <td><?php echo $result['Username']; ?></td>
-                                            <td><?php echo $result['Password']; ?></td>
-                                            <td><?php echo $result['Status']; ?></td>
-                                            
-                                       
-                                       
-                                        </tr>	                               
-									<?php
-										}
+                                    										
+									        echo '<tr>';
+                                            echo '<td>'; 
+                                            echo $result['Login_ID']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Firstname'];
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Lastname']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Telephone']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Address']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Username']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Password']; 
+                                            echo '</td>';
+                                            echo '<td>'; 
+                                            echo $result['Status'];echo '</td>';
+                                            echo '<td>'; 
+                                          echo '</tr>';                               
+									
+										}}
 	                                ?>	
 								</tbody>
                             </table>
