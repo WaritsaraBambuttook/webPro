@@ -125,10 +125,6 @@ if(isset($_GET['action'])){
     </div>
   </section>
 
- 
-
-
-
 
 <!--
     <br>
