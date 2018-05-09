@@ -40,7 +40,7 @@
     <div class="container-fluid">
         <!-- Start Page Content -->
         <div class="report">
-            <br><br><br><h1>Order Report</h1>
+            <br><br><br><h1>User Report</h1>
         </div>
         <div class="row">
             <div class="col-12">
