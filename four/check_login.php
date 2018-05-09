@@ -18,9 +18,11 @@ if (empty($rs)){ //ถ้ามันเป็ยค่าว่าง
          </div>";
 }
 else{
+
     $role = $rs["Status"];
     $userId = $rs["Login_ID"];
     $_SESSION['Login_ID'] = $userId;
+    $_SESSION['username'] = $username;
     
     if ($role === "1") {
         header("location:../aom/welcome.php");

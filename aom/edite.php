@@ -30,6 +30,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="order.php">Order Report</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../four/Logout.php">Logout</a>
+                </li>
             </ul>
         </div> 
     </div>
