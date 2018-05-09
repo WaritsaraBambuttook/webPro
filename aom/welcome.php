@@ -101,6 +101,7 @@
       
           <button type="button" class="btn btn-primary btn-lg">
           <a href="search_reID.php" style="color:#FFF" >Report ID</a></button>
+          <br><br>
         </div>
 
       </div>
