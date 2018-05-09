@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2018 at 03:39 PM
+-- Generation Time: May 09, 2018 at 08:41 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -40,12 +40,12 @@ CREATE TABLE `dessert` (
 --
 
 INSERT INTO `dessert` (`DessertID`, `Dessert_name`, `PriceDessert`, `img`) VALUES
-(1, 'Smoothie', 69, 'image/dessert/21.jpg'),
-(2, 'Pancake', 79, 'image/dessert/22.jpg'),
-(3, 'Crepescake', 79, 'image/dessert/23.jpg'),
-(4, 'BrownieCake', 49, 'image/dessert/24.jpg'),
-(5, 'Strawberrycheesecake', 69, 'image/dessert/25.jpg'),
-(6, 'DonutCake', 59, 'image/dessert/26.jpg');
+(20001, 'Smoothie', 80, 'image/dessert/21.jpg'),
+(20002, 'Pancake', 70, 'image/dessert/22.jpg'),
+(20003, 'Crepescake', 79, 'image/dessert/23.jpg'),
+(20004, 'BrownieCake', 49, 'image/dessert/24.jpg'),
+(20005, 'Strawberrycheesecake', 69, 'image/dessert/25.jpg'),
+(20006, 'DonutCake', 59, 'image/dessert/26.jpg');
 
 -- --------------------------------------------------------
 
@@ -65,12 +65,12 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`FoodID`, `Food_name`, `PriceFood`, `img`) VALUES
-(1, 'HealthySalad', 79, 'image/food/11.jpg'),
-(2, 'Friedrice', 89, 'image/food/12.jpg'),
-(3, 'soup', 79, 'image/food/13.jpg'),
-(4, 'JapaneseCurryRice', 99, 'image/food/16.jpg'),
-(5, 'Mixedsalad', 79, 'image/food/14.jpg'),
-(6, 'Ricetopped ', 69, 'image/food/15.jpg');
+(10001, 'HealthySalad', 79, 'image/food/11.jpg'),
+(10002, 'Friedrice', 89, 'image/food/12.jpg'),
+(10003, 'soup', 79, 'image/food/13.jpg'),
+(10004, 'JapaneseCurryRice', 99, 'image/food/16.jpg'),
+(10005, 'Mixedsalad', 79, 'image/food/14.jpg'),
+(10006, 'Ricetopped ', 69, 'image/food/15.jpg');
 
 -- --------------------------------------------------------
 
@@ -95,9 +95,9 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`Login_ID`, `Firstname`, `Lastname`, `Telephone`, `Email`, `Address`, `Username`, `Password`, `Status`) VALUES
-(100001, 'nano', 'barbu', '0823722103', 'gg@hotmail.com', '135 M.4 UBon', 'nano', '123456', '1'),
-(100002, 'fourry', 'bambut', '0837205339', 'four@hotmail.com', '136 M.4 UBon', 'fournukiz', '123789', '1'),
-(100007, 'warit', 'charlee', '0856425897', 'ggfh@hotmail.com', 'hfdhdfhdfhdh', 'warit', '159951', '0');
+(100001, 'nano', '1356', '0823722103', 'gg@hotmail.com', '135 M.4 UBon', 'nano', '123456', '1'),
+(100007, 'warit', 'charlee', '0856425897', 'ggfh@hotmail.com', 'hfdhdfhdfhdh', 'warit', '159951', '0'),
+(100008, 'Admim', 'fdfwf2455', '534535', 'dbgbrb@h.com', ' dweff', 'admin', 'admin', '0');
 
 -- --------------------------------------------------------
 
@@ -119,11 +119,22 @@ CREATE TABLE `report` (
 --
 
 INSERT INTO `report` (`ReportID`, `Product_name`, `Price`, `Count`, `Total`, `Login_ID`) VALUES
-(59, 'BrownieCake', 49, 1, 49, 100007),
-(60, 'BrownieCake', 49, 1, 49, 100007),
-(61, 'DonutCake', 59, 1, 59, 100007),
-(62, 'BrownieCake', 49, 1, 49, 100007),
-(63, 'Ricetopped ', 69, 10, 690, 100007);
+(99, 'Strawberrycheesecake', 69, 1, 69, 100007),
+(100, 'BrownieCake', 49, 1, 49, 100007),
+(101, 'Pancake', 79, 1, 79, 100007),
+(102, 'Strawberrycheesecake', 69, 1, 69, 100007),
+(103, 'HealthySalad', 79, 1, 79, 100007),
+(104, 'Strawberrycheesecake', 69, 6, 414, 100007),
+(105, 'BrownieCake', 49, 1, 49, 100007),
+(106, 'Strawberrycheesecake', 69, 1, 69, 100007),
+(107, 'BrownieCake', 49, 1, 49, 100007),
+(108, 'DonutCake', 59, 1, 59, 100007),
+(109, 'HealthySalad', 79, 6, 474, 100007),
+(110, 'Mixedsalad', 79, 6, 474, 100007),
+(111, 'Strawberrycheesecake', 69, 1, 69, 100007),
+(112, 'DonutCake', 59, 1, 59, 100007),
+(113, 'HealthySalad', 79, 1, 79, 100007),
+(114, 'Friedrice', 89, 1, 89, 100007);
 
 --
 -- Indexes for dumped tables
@@ -164,7 +175,7 @@ ALTER TABLE `report`
 -- AUTO_INCREMENT for table `dessert`
 --
 ALTER TABLE `dessert`
-  MODIFY `DessertID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `DessertID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20002;
 
 --
 -- AUTO_INCREMENT for table `food`
@@ -176,13 +187,13 @@ ALTER TABLE `food`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `Login_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100008;
+  MODIFY `Login_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100009;
 
 --
 -- AUTO_INCREMENT for table `report`
 --
 ALTER TABLE `report`
-  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
 -- Constraints for dumped tables
